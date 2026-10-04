@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NiveshShield — Explainable Digital Fraud &amp; Scam Resilience for Retail Investors</title>
+<meta name="description" content="NiveshShield: an explainable safety layer that helps retail investors spot suspicious investment messages. Prototype only. Not financial advice.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg" id="bg" aria-hidden="true">
+  <div class="scene">
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="shield">
+      <i class="layer l1"></i><i class="layer l2"></i><i class="layer l3"></i><i class="layer l4"></i>
+      <b class="tick"></b>
+    </div>
+  </div>
+  <div class="grid"></div>
+</div>
+
+<header class="nav">
+  <div class="brand"><span class="logo">🛡</span><div><strong>NiveshShield</strong><small>Investor Safety Intelligence</small></div></div>
+  <a class="nav-link" href="#analyzer">Analyze a message ↓</a>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">SANGYAN HACKATHON 2026 • PUBLIC GOOD • SAFETY NETWORK</p>
+    <h1>Pause. Verify.<br><span>Protect your money.</span></h1>
+    <p class="sub">An explainable safety layer for retail investors. Detect suspicious investment messages before a click, payment or credential share.</p>
+    <p class="tracks"><span>Digital Fraud &amp; Scam Resilience</span><span>Misinformation &amp; Content Literacy</span></p>
+  </section>
+
+  <section class="analyzer" id="analyzer">
+    <div class="panel input-panel">
+      <h2>Scam &amp; Claim Intelligence</h2>
+      <label for="input" class="sr">Investment message to analyze</label>
+      <textarea id="input" rows="9" placeholder="Paste any WhatsApp, Telegram, SMS, email or social-media investment message..." spellcheck="false"></textarea>
+      <div class="meta"><span id="count">0 characters</span><span class="hint">Ctrl + Enter to analyze</span></div>
+      <p id="errorMsg" class="error" role="alert" hidden></p>
+      <div class="row">
+        <button id="analyze" class="btn primary" type="button">⚡ Analyze Risk</button>
+        <button id="clear" class="btn ghost" type="button">Clear</button>
+      </div>
+      <p class="label">Try a sample</p>
+      <div class="row samples">
+        <button class="btn chip" type="button" data-sample="kyc">🚨 Fake KYC</button>
+        <button class="btn chip" type="button" data-sample="ipo">💰 Guaranteed IPO</button>
+        <button class="btn chip" type="button" data-sample="aware">🟢 Awareness</button>
+      </div>
+    </div>
+
+    <div class="panel results state-idle" id="results" aria-live="polite">
+      <div class="res-head"><h2>Explainable Risk Engine</h2><span class="badge" id="liveBadge">AWAITING MESSAGE</span></div>
+      <div class="gauge-row">
+        <div class="gauge">
+          <svg viewBox="0 0 120 120" role="img" aria-label="Risk score gauge">
+            <circle class="track" cx="60" cy="60" r="54"/>
+            <circle class="fill" id="ringFill" cx="60" cy="60" r="54" transform="rotate(-90 60 60)"/>
+          </svg>
+          <div class="gauge-text"><span id="scoreNum">0</span><small>/ 100</small></div>
+        </div>
+        <div class="verdict"><p class="cat" id="catLabel">READY</p><p id="summary"></p></div>
+      </div>
+      <div id="actionCard" class="action" hidden><h3>Recommended safe action</h3><p id="actionText"></p></div>
+      <h3 class="label">Detected signals</h3>
+      <div id="signals" class="signals"></div>
+    </div>
+  </section>
+
+  <section class="trio">
+    <article><h3>Explainable, not just a red flag</h3><p>Every warning shows the signal behind the score, helping users learn scam patterns.</p></article>
+    <article><h3>Bharat-first by design</h3><p>Simple language, low cognitive load and a workflow designed for first-time investors.</p></article>
+    <article><h3>Privacy by design</h3><p>The MVP analyzes pasted text locally in the browser and does not request credentials.</p></article>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Prototype only. Not financial advice.</strong> NiveshShield uses an explainable evidence-based client-side risk engine (transparent rules, not a trained ML model). It never recommends buying or selling securities. Never enter OTPs, passwords or PINs here.</p>
+  <p>Built for SANGYAN Hackathon 2026 — IIT (BHU) × SEBI × NSDL.</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

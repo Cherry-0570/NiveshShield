@@ -1,0 +1,42 @@
+PROJECT NAME
+NiveshShield — Explainable Digital Fraud & Scam Resilience for Retail Investors
+
+PRIMARY TRACK
+Digital Fraud & Scam Resilience
+
+SUPPORTING TRACK
+Misinformation & Content Literacy
+
+PROBLEM STATEMENT
+Retail and first-time investors receive investment messages on WhatsApp, Telegram, SMS and email. Scammers use urgency, fake KYC warnings, guaranteed returns, VIP/insider claims, lookalike links and requests for PAN, OTP or personal-UPI payments. Users lack a simple way to pause and understand the warning signs before losing money.
+
+TARGET USERS
+First-time and retail investors, especially in Tier-2/Tier-3 cities, and family members who forward investment messages.
+
+SOLUTION
+NiveshShield is a web-based safety layer. The user pastes a message and instantly gets a 0-100 risk score, a risk category, each detected warning signal with a plain-language explanation, and a recommended safe action. It never recommends buying or selling securities.
+
+KEY FEATURES
+- Six independent signals: urgency, guaranteed returns, sensitive-information requests, payment requests, VIP/secret language, suspicious links
+- Benign-evidence detection to reduce false alarms on legitimate awareness content
+- Four risk categories with distinct visual states and an animated gauge
+- Three one-click demo cases; robust handling of empty, long, emoji, ₹ and multi-line input
+- Lightweight CSS 3D visual; responsive; reduced-motion support
+
+INNOVATION
+Explainability first: every score is traceable to named signals, teaching users scam patterns. False-alarm reduction shows legitimate SEBI-style awareness content is not blindly flagged. Safe phrases cannot cancel strong scam evidence. Honest, transparent engine with no unverifiable AI claims.
+
+TECHNOLOGY STACK
+HTML, CSS (CSS 3D), vanilla JavaScript. "Explainable evidence-based client-side risk engine". No backend, no frameworks, no trained ML model.
+
+IMPACT
+Interrupts the click-pay-share chain at the moment of doubt, builds scam-pattern literacy, and supports SEBI/NSDL investor-awareness goals at zero cost and zero data collection.
+
+PRIVACY
+All analysis runs locally in the browser. No data is uploaded or stored. The app never requests OTPs, passwords, PINs, trading credentials, bank logins or API keys. Prototype only. Not financial advice.
+
+FUTURE SCOPE
+Multilingual NLP/LLM, OCR for screenshots, live domain verification, trusted-source retrieval, voice-message analysis, advanced fraud intelligence, reporting hand-off to official channels.
+
+DEMO FLOW
+Fake KYC (High) -> Guaranteed IPO (Critical) -> Awareness (Low) -> privacy and Bharat-first design -> future scope.

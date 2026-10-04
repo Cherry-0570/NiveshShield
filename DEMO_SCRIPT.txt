@@ -1,0 +1,25 @@
+NiveshShield — Demo Script (about 110 seconds)
+
+[0:00] INTRO
+"Hi, we're team ____. This is NiveshShield, an investor safety tool built for SANGYAN 2026."
+
+[0:10] PROBLEM
+"Every day, first-time investors get WhatsApp and Telegram messages with fake KYC alerts, guaranteed returns and requests for OTPs or UPI payments. By the time they doubt it, the money is gone."
+
+[0:25] FAKE KYC (click 🚨 Fake KYC)
+"Here's a message claiming a Demat account is blocked. NiveshShield scores it High Risk. It shows urgency, a request for PAN and bank details, and a lookalike link on a non-official domain. Each signal has a plain-language explanation, and the action is clear: don't click, verify on the official app."
+
+[0:50] GUARANTEED IPO (click 💰 Guaranteed IPO)
+"Now a VIP IPO offer. Guaranteed 300% profit, exclusive allocation, and a transfer to a personal UPI. Critical Scam. Guaranteed returns plus a personal payment request is the classic pattern."
+
+[1:10] AWARENESS (click 🟢 Awareness)
+"Now a genuine SEBI-style awareness message. Score near zero, Low Risk. NiveshShield doesn't blindly flag every investment message; it recognises safer language like volatility warnings and official resources."
+
+[1:25] PRIVACY & BHARAT-FIRST
+"Everything runs locally in your browser, with no uploads and no credentials requested. The language is simple and built for first-time investors."
+
+[1:35] FUTURE
+"Today it's a transparent evidence-based rule engine, not a trained model. Next: multilingual NLP, OCR for screenshots, domain verification and voice-note analysis."
+
+[1:48] CLOSING
+"NiveshShield does not tell users what to buy. It helps them know when to stop, verify and protect themselves."

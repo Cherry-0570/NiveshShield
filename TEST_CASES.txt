@@ -1,0 +1,53 @@
+NiveshShield — Test Cases (all verified by tests/engine.test.js and tests/ui.test.py)
+
+1. Fake KYC
+Input: URGENT: Your Demat trading account has been temporarily blocked due to incomplete KYC. Update PAN & bank details within 2 hours at https://nsdl-kyc-verify.in to avoid permanent suspension.
+Expected risk: HIGH RISK (score 62)
+Expected signals: Urgency, Sensitive Information Request, Suspicious Link, Combined-Signal Pattern
+
+2. Guaranteed IPO
+Input: VIP IPO ALERT! Guaranteed 300% profit in 48 hours. Our expert has an exclusive allocation. Transfer ₹25,000 to this personal UPI now. Do not miss this opportunity!
+Expected risk: CRITICAL SCAM (score 91)
+Expected signals: Urgency, Guaranteed Returns, Payment Request (personal UPI), VIP/Secret Language, Combined-Signal Pattern
+
+3. Awareness
+Input: SEBI Investor Awareness: Understanding market volatility and long-term investing. Please use official SEBI resources for investor education. Past performance does not guarantee future results.
+Expected risk: BENIGN / LOW RISK (score 0)
+Expected signals: none; green "Safer phrase" cards shown
+
+4. Empty input
+Input: (blank or only spaces/newlines)
+Expected: message "Please paste a message to analyze."; no crash; no result shown
+
+5. Normal investment message
+Input: Nifty closed 0.4% higher today. Consider reading the annual report before investing.
+Expected risk: BENIGN / LOW RISK (score 0)
+Expected signals: none
+
+6. Suspicious URL
+Input: Claim your refund here: http://bit.ly/3xYzAb
+Expected risk: SUSPICIOUS (score 25)
+Expected signals: Suspicious Link (URL shortener)
+
+7. Sensitive information request
+Input: Please share your Aadhaar number and the OTP you received to complete verification.
+Expected risk: SUSPICIOUS (score 30)
+Expected signals: Sensitive Information Request
+
+8. Payment request
+Input: Send money to this personal UPI id to book your allotment: ravi@okaxis
+Expected risk: SUSPICIOUS (score 30)
+Expected signals: Payment Request (personal UPI)
+
+9. Special characters, emoji, newlines
+Input: 🚨🚨 URGENT 🚨🚨 / Guaranteed returns!!! ₹₹₹ / Join our Telegram VIP group <b>now</b> & "win"
+Expected risk: HIGH RISK (score 61)
+Expected signals: Urgency, Guaranteed Returns, VIP/Secret Language
+
+10. Official link
+Input: Read more at https://www.sebi.gov.in/investors.html
+Expected risk: BENIGN / LOW RISK
+Expected signals: none (info card: external link, verify domain)
+
+11. Very long input (>20,000 characters)
+Expected: analyzed without crashing; notice that only the first 20,000 characters were analyzed
